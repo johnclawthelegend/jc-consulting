@@ -3,25 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JC Consulting — Web Presence & Growth for Local Businesses</title>
-<meta name="description" content="JC Consulting helps local businesses win more customers online — website audits, modern redesigns, local SEO, performance optimization, and analytics. Free initial review.">
+<title>JC Consulting | Websites, Local SEO &amp; Growth for Local Businesses</title>
+<meta name="description" content="JC Consulting helps local businesses win more customers online with professional website design, local SEO, performance optimization, and analytics. Free website review — serving DC, MD, VA and nationwide.">
+<meta name="keywords" content="local SEO, website design, small business website, web audit, website redesign, local business marketing, Washington DC web design">
+<meta name="author" content="JC Consulting">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="JC Consulting — Web Presence & Growth for Local Businesses">
-<meta property="og:description" content="We help local businesses turn their website into their best salesperson. Audits, redesigns, local SEO, and analytics.">
-<meta property="og:type" content="website">
 <link rel="canonical" href="https://johnclawthelegend.github.io/jc-consulting/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="JC Consulting | Websites, Local SEO &amp; Growth for Local Businesses">
+<meta property="og:description" content="We help local businesses turn their website into their best salesperson — design, local SEO, performance, and analytics.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://johnclawthelegend.github.io/jc-consulting/">
+<meta property="og:site_name" content="JC Consulting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JC Consulting | Web Presence &amp; Growth for Local Businesses">
+<meta name="twitter:description" content="Professional websites, local SEO, and analytics for local businesses. Free review.">
+
+<!-- Favicon (inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a1f44'/><text x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='%23f5b301' text-anchor='middle'>JC</text></svg>">
+
+<!-- Structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "JC Consulting",
-  "description": "Web presence and digital growth consulting for local businesses.",
-  "areaServed": "United States",
-  "serviceType": ["Website Audit", "Web Design", "Local SEO", "Performance Optimization", "Analytics Setup"],
+  "image": "https://johnclawthelegend.github.io/jc-consulting/",
+  "url": "https://johnclawthelegend.github.io/jc-consulting/",
+  "email": "jclaw467@gmail.com",
+  "description": "Web presence and digital growth consulting for local businesses — website design, local SEO, performance optimization, and analytics.",
+  "areaServed": ["Washington DC", "Maryland", "Virginia", "United States"],
+  "serviceType": ["Website Design", "Website Audit", "Local SEO", "Performance Optimization", "Analytics Setup", "Online Booking Integration"],
   "priceRange": "$$",
-  "email": "jclaw467@gmail.com"
+  "founder": { "@type": "Person", "name": "John C" }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How much does it cost?","acceptedAnswer":{"@type":"Answer","text":"Every project is quoted upfront with a flat price — no retainers or surprises. Most website fixes and audits range from a few hundred to a couple thousand dollars depending on scope. The initial review is always free."}},
+    {"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"Most fixes are completed within a few days. A full redesign typically takes one to two weeks. You review everything before it goes live."}},
+    {"@type":"Question","name":"Do you work with businesses outside the DC area?","acceptedAnswer":{"@type":"Answer","text":"Yes. While I'm based in the DC/MD/VA area, all work is done remotely, so I help local businesses anywhere in the United States."}},
+    {"@type":"Question","name":"What if I'm not technical?","acceptedAnswer":{"@type":"Answer","text":"That's exactly who I work best with. I handle all the technical work and explain everything in plain English. You never have to touch code."}}
+  ]
+}
+</script>
+
 <style>
   :root {
     --navy: #0a1f44;
@@ -37,18 +67,15 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #1e293b;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
+    color: #1e293b; line-height: 1.65; -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3 { line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; }
+  h1,h2,h3 { line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; }
   a { color: var(--accent); text-decoration: none; }
   .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
   .btn {
-    display: inline-block; background: var(--accent); color: #fff;
-    padding: 14px 30px; border-radius: 8px; font-weight: 600; font-size: 16px;
-    transition: transform .15s ease, box-shadow .15s ease;
-    box-shadow: 0 4px 14px rgba(37,99,235,.3);
+    display: inline-block; background: var(--accent); color: #fff; padding: 14px 30px;
+    border-radius: 8px; font-weight: 600; font-size: 16px;
+    transition: transform .15s ease, box-shadow .15s ease; box-shadow: 0 4px 14px rgba(37,99,235,.3);
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(37,99,235,.4); }
   .btn-gold { background: var(--gold); color: var(--navy); box-shadow: 0 4px 14px rgba(245,179,1,.3); }
@@ -56,127 +83,111 @@
   .btn-outline { background: transparent; border: 2px solid #fff; box-shadow: none; }
   .btn-outline:hover { background: rgba(255,255,255,.1); }
 
-  /* Nav */
-  nav {
-    position: sticky; top: 0; z-index: 100; background: rgba(10,31,68,.97);
-    backdrop-filter: blur(8px); padding: 16px 0;
-  }
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(10,31,68,.97); backdrop-filter: blur(8px); padding: 16px 0; }
   nav .container { display: flex; justify-content: space-between; align-items: center; }
-  .logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.03em; }
-  .logo span { color: var(--gold); }
+  .logo { display:flex; align-items:center; gap:10px; font-size: 21px; font-weight: 800; color: #fff; letter-spacing: -0.03em; }
+  .logo-mark { width:34px; height:34px; border-radius:8px; background:var(--gold); color:var(--navy); display:grid; place-items:center; font-size:16px; font-weight:800; }
   .nav-links a { color: #cbd5e1; margin-left: 28px; font-size: 15px; font-weight: 500; }
   .nav-links a:hover { color: #fff; }
   .nav-links .btn { color: #fff; margin-left: 28px; padding: 9px 20px; }
-  @media (max-width: 720px){ .nav-links a:not(.btn) { display:none; } }
+  @media (max-width: 760px){ .nav-links a:not(.btn) { display:none; } }
 
-  /* Hero */
-  .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #1e3a8a 100%);
-    color: #fff; padding: 100px 0 110px; text-align: center; position: relative; overflow: hidden;
-  }
-  .hero::after{
-    content:""; position:absolute; bottom:-1px; left:0; right:0; height:60px;
-    background: var(--light);
-    clip-path: polygon(0 100%, 100% 100%, 100% 0);
-  }
-  .hero h1 { font-size: clamp(32px, 5vw, 54px); max-width: 880px; margin: 0 auto 22px; }
-  .hero .subtitle { font-size: clamp(17px, 2.5vw, 21px); color: #cbd5e1; max-width: 640px; margin: 0 auto 38px; }
-  .hero .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-  .eyebrow {
-    display:inline-block; background: rgba(245,179,1,.15); color: var(--gold);
-    font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-    padding: 7px 16px; border-radius: 100px; margin-bottom: 24px;
-  }
+  .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #1e3a8a 100%); color:#fff; padding: 100px 0 110px; text-align:center; position:relative; overflow:hidden; }
+  .hero::after { content:""; position:absolute; bottom:-1px; left:0; right:0; height:60px; background:var(--light); clip-path: polygon(0 100%,100% 100%,100% 0); }
+  .hero h1 { font-size: clamp(32px,5vw,54px); max-width: 880px; margin: 0 auto 22px; }
+  .hero .subtitle { font-size: clamp(17px,2.5vw,21px); color:#cbd5e1; max-width:640px; margin:0 auto 38px; }
+  .hero .cta-row { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .eyebrow { display:inline-block; background: rgba(245,179,1,.15); color:var(--gold); font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:7px 16px; border-radius:100px; margin-bottom:24px; }
 
-  /* Trust bar */
-  .trust { background: var(--light); padding: 40px 0; text-align: center; }
-  .trust p { color: var(--gray); font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 18px; }
-  .trust-stats { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
-  .trust-stats .stat .num { font-size: 38px; font-weight: 800; color: var(--navy); }
-  .trust-stats .stat .label { font-size: 14px; color: var(--gray); }
+  .trust { background:var(--light); padding:40px 0; text-align:center; }
+  .trust p.label-row { color:var(--gray); font-size:13px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin-bottom:18px; }
+  .trust-stats { display:flex; justify-content:center; gap:60px; flex-wrap:wrap; }
+  .trust-stats .stat .num { font-size:38px; font-weight:800; color:var(--navy); }
+  .trust-stats .stat .label { font-size:14px; color:var(--gray); }
 
-  /* Sections */
   section { padding: 84px 0; }
-  .section-head { text-align: center; max-width: 660px; margin: 0 auto 56px; }
-  .section-head .eyebrow { background: rgba(37,99,235,.1); color: var(--accent); }
-  .section-head h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; color: var(--navy); }
-  .section-head p { color: var(--gray); font-size: 18px; }
+  .section-head { text-align:center; max-width:660px; margin:0 auto 56px; }
+  .section-head .eyebrow { background: rgba(37,99,235,.1); color:var(--accent); }
+  .section-head h2 { font-size:clamp(28px,4vw,40px); margin-bottom:16px; color:var(--navy); }
+  .section-head p { color:var(--gray); font-size:18px; }
 
-  /* Services grid */
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
-  .card {
-    background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 34px 30px;
-    transition: transform .2s ease, box-shadow .2s ease;
-  }
-  .card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(10,31,68,.1); border-color: transparent; }
-  .card .icon {
-    width: 54px; height: 54px; border-radius: 12px; display: grid; place-items: center;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light)); margin-bottom: 20px; font-size: 26px;
-  }
-  .card h3 { font-size: 21px; margin-bottom: 12px; color: var(--navy); }
-  .card p { color: var(--gray); font-size: 15.5px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:28px; }
+  .card { background:#fff; border:1px solid var(--border); border-radius:14px; padding:34px 30px; transition:transform .2s ease, box-shadow .2s ease; }
+  .card:hover { transform:translateY(-5px); box-shadow:0 18px 40px rgba(10,31,68,.1); border-color:transparent; }
+  .card .icon { width:54px; height:54px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg,var(--accent),var(--accent-light)); margin-bottom:20px; }
+  .card .icon svg { width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .card h3 { font-size:21px; margin-bottom:12px; color:var(--navy); }
+  .card p { color:var(--gray); font-size:15.5px; }
 
-  /* Process */
-  .process { background: var(--navy); color: #fff; }
-  .process .section-head h2 { color: #fff; }
-  .process .section-head p { color: #cbd5e1; }
-  .process .section-head .eyebrow { background: rgba(245,179,1,.15); color: var(--gold); }
-  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 30px; }
-  .step { position: relative; padding-top: 10px; }
-  .step .n {
-    font-size: 15px; font-weight: 800; color: var(--navy); background: var(--gold);
-    width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 18px;
-  }
-  .step h3 { font-size: 19px; margin-bottom: 10px; }
-  .step p { color: #cbd5e1; font-size: 15px; }
+  /* About */
+  .about { background: var(--light); }
+  .about-wrap { display:grid; grid-template-columns: 280px 1fr; gap:50px; align-items:center; }
+  @media (max-width:760px){ .about-wrap { grid-template-columns:1fr; text-align:center; } }
+  .about-photo { width:240px; height:240px; margin:0 auto; border-radius:20px; background:linear-gradient(135deg,var(--navy),var(--accent)); display:grid; place-items:center; color:#fff; font-size:64px; font-weight:800; box-shadow:0 20px 50px rgba(10,31,68,.2); }
+  .about-text h2 { color:var(--navy); font-size:clamp(26px,4vw,36px); margin-bottom:16px; }
+  .about-text p { color:#334155; font-size:17px; margin-bottom:16px; }
 
-  /* Results / testimonials */
-  .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 28px; }
-  .quote { background: var(--light); border-radius: 14px; padding: 32px; border-left: 4px solid var(--accent); }
-  .quote p { font-style: italic; color: #334155; margin-bottom: 18px; font-size: 16px; }
-  .quote .who { font-weight: 700; color: var(--navy); }
-  .quote .who span { display: block; font-weight: 400; color: var(--gray); font-size: 14px; }
-  .stars { color: var(--gold); margin-bottom: 14px; letter-spacing: 2px; }
+  .process { background:var(--navy); color:#fff; }
+  .process .section-head h2 { color:#fff; }
+  .process .section-head p { color:#cbd5e1; }
+  .process .section-head .eyebrow { background:rgba(245,179,1,.15); color:var(--gold); }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:30px; }
+  .step .n { font-size:15px; font-weight:800; color:var(--navy); background:var(--gold); width:40px; height:40px; border-radius:50%; display:grid; place-items:center; margin-bottom:18px; }
+  .step h3 { font-size:19px; margin-bottom:10px; }
+  .step p { color:#cbd5e1; font-size:15px; }
 
-  /* CTA */
-  .cta-band {
-    background: linear-gradient(135deg, var(--accent) 0%, #1d4ed8 100%); color: #fff; text-align: center;
-  }
-  .cta-band h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; }
-  .cta-band p { font-size: 19px; opacity: .92; max-width: 560px; margin: 0 auto 34px; }
+  .quotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:28px; }
+  .quote { background:var(--light); border-radius:14px; padding:32px; border-left:4px solid var(--accent); }
+  .quote p { font-style:italic; color:#334155; margin-bottom:18px; font-size:16px; }
+  .quote .who { font-weight:700; color:var(--navy); }
+  .quote .who span { display:block; font-weight:400; color:var(--gray); font-size:14px; }
+  .stars { color:var(--gold); margin-bottom:14px; letter-spacing:2px; }
 
-  /* Contact form */
-  .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
-  @media (max-width: 800px){ .contact-wrap { grid-template-columns: 1fr; } }
-  .contact-info h2 { color: var(--navy); font-size: 32px; margin-bottom: 18px; }
-  .contact-info p { color: var(--gray); margin-bottom: 24px; font-size: 17px; }
-  .contact-info .detail { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 16px; color: #334155; }
-  form { background: #fff; padding: 36px; border-radius: 16px; box-shadow: 0 12px 40px rgba(10,31,68,.08); border: 1px solid var(--border); }
-  form label { display:block; font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
-  form input, form textarea, form select {
-    width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px;
-    font-size: 15px; margin-bottom: 18px; font-family: inherit; transition: border-color .15s;
-  }
-  form input:focus, form textarea:focus, form select:focus { outline: none; border-color: var(--accent); }
-  form button { width: 100%; border: none; cursor: pointer; }
+  /* FAQ */
+  .faq-list { max-width:760px; margin:0 auto; }
+  .faq-item { border-bottom:1px solid var(--border); }
+  .faq-item summary { cursor:pointer; padding:22px 0; font-weight:600; font-size:18px; color:var(--navy); list-style:none; display:flex; justify-content:space-between; align-items:center; }
+  .faq-item summary::-webkit-details-marker { display:none; }
+  .faq-item summary::after { content:"+"; font-size:24px; color:var(--accent); font-weight:400; }
+  .faq-item[open] summary::after { content:"–"; }
+  .faq-item p { padding:0 0 22px; color:var(--gray); font-size:16px; }
 
-  /* Footer */
-  footer { background: var(--navy); color: #94a3b8; padding: 48px 0 28px; text-align: center; }
-  footer .logo { margin-bottom: 14px; display: inline-block; }
-  footer .flinks { margin: 16px 0; }
-  footer .flinks a { color: #cbd5e1; margin: 0 14px; font-size: 14px; }
-  footer .fine { font-size: 13px; margin-top: 18px; color: #64748b; }
+  .cta-band { background:linear-gradient(135deg,var(--accent) 0%,#1d4ed8 100%); color:#fff; text-align:center; }
+  .cta-band h2 { font-size:clamp(28px,4vw,40px); margin-bottom:16px; }
+  .cta-band p { font-size:19px; opacity:.92; max-width:560px; margin:0 auto 34px; }
+
+  .contact-wrap { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; }
+  @media (max-width:800px){ .contact-wrap { grid-template-columns:1fr; } }
+  .contact-info h2 { color:var(--navy); font-size:32px; margin-bottom:18px; }
+  .contact-info p { color:var(--gray); margin-bottom:24px; font-size:17px; }
+  .contact-info .detail { display:flex; align-items:center; gap:12px; margin-bottom:14px; font-size:16px; color:#334155; }
+  form { background:#fff; padding:36px; border-radius:16px; box-shadow:0 12px 40px rgba(10,31,68,.08); border:1px solid var(--border); }
+  form label { display:block; font-size:14px; font-weight:600; color:var(--navy); margin-bottom:6px; }
+  form input, form textarea { width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-size:15px; margin-bottom:18px; font-family:inherit; transition:border-color .15s; }
+  form input:focus, form textarea:focus { outline:none; border-color:var(--accent); }
+  form button { width:100%; border:none; cursor:pointer; }
+
+  footer { background:var(--navy); color:#94a3b8; padding:48px 0 28px; text-align:center; }
+  footer .logo { justify-content:center; margin-bottom:14px; }
+  footer .social { margin:18px 0; display:flex; gap:16px; justify-content:center; }
+  footer .social a { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.08); display:grid; place-items:center; transition:background .15s; }
+  footer .social a:hover { background:var(--accent); }
+  footer .social svg { width:18px; height:18px; fill:#cbd5e1; }
+  footer .flinks { margin:16px 0; }
+  footer .flinks a { color:#cbd5e1; margin:0 14px; font-size:14px; }
+  footer .fine { font-size:13px; margin-top:18px; color:#64748b; }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="container">
-    <div class="logo">JC<span>.</span>Consulting</div>
+    <a href="#" class="logo"><span class="logo-mark">JC</span> Consulting</a>
     <div class="nav-links">
       <a href="#services">Services</a>
+      <a href="#about">About</a>
       <a href="#process">Process</a>
-      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact" class="btn">Free Review</a>
     </div>
   </div>
@@ -196,7 +207,7 @@
 
 <div class="trust">
   <div class="container">
-    <p>Trusted by local restaurants, contractors &amp; service businesses</p>
+    <p class="label-row">Trusted by local restaurants, contractors &amp; service businesses</p>
     <div class="trust-stats">
       <div class="stat"><div class="num">2&times;</div><div class="label">Avg. increase in inquiries</div></div>
       <div class="stat"><div class="num">48hr</div><div class="label">Typical turnaround on fixes</div></div>
@@ -214,34 +225,48 @@
     </div>
     <div class="grid">
       <div class="card">
-        <div class="icon">🔍</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         <h3>Website Audits</h3>
         <p>A clear, jargon-free breakdown of what's helping and hurting your site — security, speed, mobile, SEO, and conversion gaps.</p>
       </div>
       <div class="card">
-        <div class="icon">🎨</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
         <h3>Modern Redesigns</h3>
         <p>Fast, mobile-first websites that look professional and are built to turn visitors into paying customers.</p>
       </div>
       <div class="card">
-        <div class="icon">📍</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.7-7-11a7 7 0 0114 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
         <h3>Local SEO</h3>
         <p>Get found when nearby customers search. Google Business optimization, local keywords, and search visibility that compounds.</p>
       </div>
       <div class="card">
-        <div class="icon">⚡</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
         <h3>Performance &amp; Security</h3>
         <p>SSL, page-speed optimization, and mobile fixes so visitors stay, trust you, and don't bounce to a competitor.</p>
       </div>
       <div class="card">
-        <div class="icon">📊</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
         <h3>Analytics &amp; Tracking</h3>
         <p>Know exactly where your customers come from and what they do — so every marketing dollar is spent with confidence.</p>
       </div>
       <div class="card">
-        <div class="icon">🛒</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 13h11l2-9H6"/></svg></div>
         <h3>Online Ordering &amp; Booking</h3>
         <p>Add ordering, reservations, or quote requests directly to your site and capture business 24/7 — even while you sleep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-photo">JC</div>
+      <div class="about-text">
+        <span class="eyebrow" style="background:rgba(37,99,235,.1);color:var(--accent);">About</span>
+        <h2>A straightforward partner, not a faceless agency</h2>
+        <p>I'm John, the person behind JC Consulting. I started this because too many great local businesses are held back by websites that quietly turn customers away — and most agencies make it confusing and expensive to fix.</p>
+        <p>I work directly with you, explain everything in plain English, and price every project upfront. No retainers, no jargon, no runaround — just a better website that brings in more business.</p>
       </div>
     </div>
   </div>
@@ -255,26 +280,10 @@
       <p>From first conversation to live results, you always know exactly what's happening and why.</p>
     </div>
     <div class="steps">
-      <div class="step">
-        <div class="n">1</div>
-        <h3>Free Review</h3>
-        <p>I analyze your current site and send a plain-English report of what's working and what's costing you customers.</p>
-      </div>
-      <div class="step">
-        <div class="n">2</div>
-        <h3>Game Plan</h3>
-        <p>We hop on a short call. I lay out exactly what I'd fix, the impact, and a flat, upfront price — no retainers.</p>
-      </div>
-      <div class="step">
-        <div class="n">3</div>
-        <h3>Build &amp; Fix</h3>
-        <p>I handle the work, usually within days. You review everything before it goes live. Nothing breaks, nothing's a mystery.</p>
-      </div>
-      <div class="step">
-        <div class="n">4</div>
-        <h3>Grow</h3>
-        <p>Your site starts pulling in more calls, bookings, and customers — and you have the data to prove it.</p>
-      </div>
+      <div class="step"><div class="n">1</div><h3>Free Review</h3><p>I analyze your current site and send a plain-English report of what's working and what's costing you customers.</p></div>
+      <div class="step"><div class="n">2</div><h3>Game Plan</h3><p>We hop on a short call. I lay out exactly what I'd fix, the impact, and a flat, upfront price — no retainers.</p></div>
+      <div class="step"><div class="n">3</div><h3>Build &amp; Fix</h3><p>I handle the work, usually within days. You review everything before it goes live. Nothing breaks, nothing's a mystery.</p></div>
+      <div class="step"><div class="n">4</div><h3>Grow</h3><p>Your site starts pulling in more calls, bookings, and customers — and you have the data to prove it.</p></div>
     </div>
   </div>
 </section>
@@ -287,21 +296,24 @@
       <p>Real, practical improvements that show up where it counts — the phone ringing and the inbox filling.</p>
     </div>
     <div class="quotes">
-      <div class="quote">
-        <div class="stars">★★★★★</div>
-        <p>"John found three things on our site we had no idea were broken. Fixed them in a weekend, and we started getting reservation requests through the site for the first time."</p>
-        <div class="who">Restaurant Owner<span>Washington, DC</span></div>
-      </div>
-      <div class="quote">
-        <div class="stars">★★★★★</div>
-        <p>"Straightforward, fast, and no pushy sales stuff. Our site finally shows up on Google when people search for us. Worth every penny."</p>
-        <div class="who">HVAC Contractor<span>Baltimore, MD</span></div>
-      </div>
-      <div class="quote">
-        <div class="stars">★★★★★</div>
-        <p>"He explained everything in a way that actually made sense. The new site loads instantly and looks ten times more professional."</p>
-        <div class="who">Salon Owner<span>Richmond, VA</span></div>
-      </div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"John found three things on our site we had no idea were broken. Fixed them in a weekend, and we started getting reservation requests through the site for the first time."</p><div class="who">Restaurant Owner<span>Washington, DC</span></div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"Straightforward, fast, and no pushy sales stuff. Our site finally shows up on Google when people search for us. Worth every penny."</p><div class="who">HVAC Contractor<span>Baltimore, MD</span></div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"He explained everything in a way that actually made sense. The new site loads instantly and looks ten times more professional."</p><div class="who">Salon Owner<span>Richmond, VA</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="background:rgba(37,99,235,.1);color:var(--accent);">Questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary>How much does it cost?</summary><p>Every project is quoted upfront with a flat price — no retainers or surprises. Most website fixes and audits range from a few hundred to a couple thousand dollars depending on scope. The initial review is always free.</p></details>
+      <details class="faq-item"><summary>How long does it take?</summary><p>Most fixes are completed within a few days. A full redesign typically takes one to two weeks. You review everything before it goes live.</p></details>
+      <details class="faq-item"><summary>Do you work with businesses outside the DC area?</summary><p>Yes. While I'm based in the DC/MD/VA area, all work is done remotely, so I help local businesses anywhere in the United States.</p></details>
+      <details class="faq-item"><summary>What if I'm not technical?</summary><p>That's exactly who I work best with. I handle all the technical work and explain everything in plain English — you never have to touch code.</p></details>
     </div>
   </div>
 </section>
@@ -327,6 +339,7 @@
       <form action="https://formsubmit.co/jclaw467@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New JC Consulting inquiry">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required placeholder="Jane Smith">
         <label for="business">Business Name</label>
@@ -345,15 +358,16 @@
 
 <footer>
   <div class="container">
-    <div class="logo">JC<span>.</span>Consulting</div>
+    <a href="#" class="logo"><span class="logo-mark">JC</span> Consulting</a>
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.3s0-2.1-.1-3.3c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8a3.1 3.1 0 100-6.2 3.1 3.1 0 000 6.2zm6.3-8.2a1.1 1.1 0 11-2.3 0 1.1 1.1 0 012.3 0z"/></svg></a>
+    </div>
     <div class="flinks">
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#results">Results</a>
-      <a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
     </div>
     <p>Web presence &amp; growth consulting for local businesses.</p>
-    <p class="fine">© <span id="year"></span> JC Consulting. All rights reserved. · <a href="mailto:jclaw467@gmail.com?subject=unsubscribe" style="color:#64748b;">Unsubscribe</a></p>
+    <p class="fine">© <span id="year"></span> JC Consulting. All rights reserved. · <a href="#contact" style="color:#64748b;">Privacy</a> · <a href="mailto:jclaw467@gmail.com?subject=unsubscribe" style="color:#64748b;">Unsubscribe</a></p>
   </div>
 </footer>
 

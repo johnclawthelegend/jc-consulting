@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://johnclawthelegend.github.io/jc-consulting/sitemap.xml
